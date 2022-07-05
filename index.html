@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Menu</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar-Menu Section -->
+    <header>
+        <div class="top-navigation">
+            <a href="#" onclick="togglePopupMakeBtn()">Tab Menu 1</a>
+            <a href="#" onclick="togglePopup()">Tab Menu 2</a>
+            <a href="#" onclick="togglePopup()">Tab Menu 3</a>
+            <a href="#" onclick="togglePopup()">Tab Menu 4</a>
+        </div>
+    </header>
+
+    <!-- Popup Section -->
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopupMakeBtn()">&times;</div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aspernatur, a fugiat vitae repellat inventore officia. </p>
+            <span id="span-btn"></span>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h2>Title</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vitae quia nihil, debitis at sint delectus sunt esse nesciunt dolore inventore voluptas, minus dicta ipsa numquam? Repudiandae sit quod perspiciatis error dolores ipsam sint.
+            </p>
+        </div>
+    </div>
+    
+    <!-- JavaScript Link -->
+<script src="script.js"></script>
+</body>
+</html>
